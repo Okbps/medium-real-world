@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres1@localhost/data_collector'
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://qxgxjhjumacgzv:f0d4df8106232bbdf33a018d9ac394d3f831edb581416d78f564a240e1021db8@ec2-54-204-41-109.compute-1.amazonaws.com:5432/dcb9mtuo2uer7g?sslmode=require'
 db = SQLAlchemy(app)
 
 class Data(db.Model):
